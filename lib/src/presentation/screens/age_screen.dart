@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class AgeScreen extends StatelessWidget {
+  const AgeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Age Screen'),
+        title: const Text('Age Screen'),
       ),
       body: Center(
         child: ElevatedButton(
@@ -14,7 +16,7 @@ class AgeScreen extends StatelessWidget {
             // Navigator.pushNamed(context, '/second');
             context.go('/bmi');
           },
-          child: Text('Go to BMI Screen from Age Screen'),
+          child: const Text('Go to BMI Screen from Age Screen'),
         ),
       ),
     );

@@ -9,19 +9,19 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => HomeScreen(),
+        builder: (context, state) => const HomeScreen(),
       ),
       GoRoute(
         path: '/bmi',
-        builder: (context, state) => BMIScreen(),
+        builder: (context, state) => const BMIScreen(),
       ),
       GoRoute(
         path: '/age',
-        builder: (context, state) => AgeScreen(),
+        builder: (context, state) => const AgeScreen(),
       ),
       GoRoute(
         path: '/zodiac',
-        builder: (context, state) => ZodiacScreen(),
+        builder: (context, state) => const ZodiacScreen(),
       ),
     ],
   );

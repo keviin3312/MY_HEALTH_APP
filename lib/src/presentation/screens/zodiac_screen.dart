@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class ZodiacScreen extends StatelessWidget {
+  const ZodiacScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Zodiac Screen'),
+        title: const Text('Zodiac Screen'),
       ),
       body: Center(
         child: ElevatedButton(
@@ -14,7 +16,7 @@ class ZodiacScreen extends StatelessWidget {
             // Navigator.pushNamed(context, '/second');
             context.go('/');
           },
-          child: Text('Go to Home  Screen from Zodiac Screen'),
+          child: const Text('Go to Home  Screen from Zodiac Screen'),
         ),
       ),
     );
